@@ -1,10 +1,59 @@
-body{
+html,body{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    color: red;
+    background: url('../images/login.jpg') no-repeat center;
+    background-size: cover;
+   
 }
-h1{
-    color: aquamarine;
+/* .layui-input-wrap{
+    width: 400px;
+    height: 400px !important;
+    left: 38%;
+    top:40%
+} */
+.main{
+    width: 400px;
+    height: 300px !important;
+    left: 38%;
+    top:35%;
+    position:absolute;
+    background-color: azure;
+    
+
 }
+.main2{
+    margin-top:75px;
+}
+
+.layui-input-wrap{
+    line-height:30px;
+    margin-top:10px;
+    height:33px;
+    
+    
+}
+.layui-btn-container{
+    margin-top:25px ;
+    position:absolute;
+    left:18%;
+}
+.loginf{
+    margin-top:80px;
+    text-align:right;
+    margin-right:3px ;
+}
+.loginf a{
+    cursor: pointer;
+}
+
+.regxf{
+    margin-top:80px;
+    text-align:right;
+    margin-right:3px ;
+}
+.regxf a{
+    cursor: pointer;
+}
+

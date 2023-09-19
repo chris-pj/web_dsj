@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大事件平台登录</title>
-    <link href="./assets/css/login.css"/>
+    <link rel="stylesheet" href="./assets/css/login.css"/>
+    <link rel="stylesheet" href="./assets/css/layui.css"/>
+    <script rel="stylesheet"  src="../dsj/assets/lib/layui.js"></script>
+
 </head>
 <body>
-  <h1>323</h1>  
+   
+    <div class="main" >
+     <div class="layui-font-blue" style="position: inherit;margin-top:25px;left:30%;font-size: large;">系统管理后台登录</div>
+      <form class="layui-form">
+        <div class="main2" id="login">
+    <div class="layui-input-wrap">
+        <div class="layui-input-prefix layui-input-split">
+          <i class="layui-icon layui-icon-username"></i>
+        </div>
+        <input type="text" name="uname" placeholder="输入用户名" class="layui-input" autocomplete="off"  lay-verify="uname"/>
+      </div>
+        <div class="layui-form">
+      <div class="layui-input-wrap">
+        <div class="layui-input-prefix layui-input-split">
+          <i class="layui-icon layui-icon-password"></i>
+        </div>
+        <input type="password" name="password" placeholder="输入密码"  lay-affix="eye" class="layui-input">
+      </div>  
+
+             </div>
+        <div class="layui-btn-container">
+            <button lay-submit lay-filter="pj" type="submit" class="layui-btn layui-btn-lg" style="width:250px"  >登录</button>
+<!--            <button type="button" class="layui-btn layui-btn-sm">注册</button>-->
+
+        </div>
+         <div class="loginf">
+             <span><a href="javascript:;" class="layui-font-blue layui-font-14">立即注册</a></span>
+         </div>
+
+     </div>
+      </form>
+        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <form>
+        <div class="main2" id="regx" style="display: none" >
+            <div class="layui-input-wrap">
+                <div class="layui-input-prefix layui-input-split">
+                    <i class="layui-icon layui-icon-username"></i>
+                </div>
+                <input type="text" placeholder="输入用户名" class="layui-input">
+            </div>
+
+                <div class="layui-input-wrap">
+                    <div class="layui-input-prefix layui-input-split">
+                        <i class="layui-icon layui-icon-password"></i>
+                    </div>
+                    <input type="password" placeholder="输入密码"  lay-affix="eye" class="layui-input">
+                </div>
+               <div class="layui-input-wrap">
+                <div class="layui-input-prefix layui-input-split">
+                    <i class="layui-icon layui-icon-password"></i>
+                </div>
+                <input type="password" placeholder="再次输入密码"  lay-affix="eye" class="layui-input">
+            </div>
+
+
+            <div class="layui-btn-container">
+                <button type="button" class="layui-btn layui-btn-lg" style="width:250px" >注册</button>
+                <!--            <button type="button" class="layui-btn layui-btn-sm">注册</button>-->
+
+            </div>
+            <div class="regxf">
+                <span><a href="javascript:;" class="layui-font-blue layui-font-14">返回登录</a></span>
+            </div>
+        </div>
+        </form>
+
+    </div>
+
+
+    <script rel="stylesheet" src="../pj3/./jquery.min.js"></script>
+<script rel="stylesheet" src="./assets/js/login.js"></script>
+
+<!--<script>-->
+<!--    layui.use(function() {-->
+<!--        var form = layui.form;-->
+<!--        // 自定义验证规则-->
+<!--        form.verify({-->
+<!--            // 验证用户名，且为必填项-->
+<!--         uname: function (value, elem) {-->
+<!--             //console.log(value);-->
+<!--             if (/^\d+$/.test(value)) {-->
+<!--                 return '用户名不能全为数字';-->
+<!--             }-->
+<!--            }-->
+<!--        })-->
+
+<!--      form.on('submit(demo-verify)', function(data){-->
+<!--        var field = data.field; // 获取表单字段值-->
+<!--        // 显示填写结果，仅作演示用-->
+<!--        layer.alert(JSON.stringify(field), {-->
+<!--            title: '当前填写的字段值'-->
+<!--        });-->
+
+<!--        return false; // 阻止默认 form 跳转-->
+<!--    })-->
+<!--    })-->
+<!--</script>-->
+
+
+
 </body>
 </html>
